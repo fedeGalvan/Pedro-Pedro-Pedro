@@ -1,0 +1,33 @@
+html {
+  background: black;
+}
+
+.wrapper {
+  animation: spin 10s linear infinite;
+  height: 100px;
+  overflow: hidden;
+  padding: 40px;
+  width: 100px;
+}
+
+.raccoon {
+  animation: bounce 200ms linear infinite alternate;
+  border-radius: 50%;
+  box-shadow: 0 0 4px black;
+  height: 100px;
+  margin-left: 20px;
+  margin-top: 20px;
+  width: 100%;
+}
+
+@keyframes bounce {
+  to {
+    transform: translateY(5px);
+  }
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(-1turn);
+  }
+}
